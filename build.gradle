@@ -15,6 +15,9 @@ dependencies {
     implementation 'io.quarkus:quarkus-rest-client'
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
     implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-resteasy-jsonb'
+    implementation 'software.amazon.awssdk:netty-nio-client'
+    implementation 'software.amazon.awssdk:url-connection-client'
 
     testImplementation 'io.quarkus:quarkus-junit5'
     testImplementation 'io.rest-assured:rest-assured'
